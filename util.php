@@ -18,7 +18,14 @@
 	}
 
 	function setupDB() {
-		R::setup('mysql:host=localhost:8889;dbname=ongair_prod','root','root', true);
+		// read config file
+		$configs = include('config.php');
+		$host = $configs['host'];
+		$db = $configs['database'];
+		$username = $configs['username'];
+		$password = $configs['password'];
+		// R::setup('mysql:host=localhost:8889;dbname=database','root','root', true);
+		R::setup("mysql:host=".$host.";dbname=".$db,$username,$password, true);
 	}
 
 	function getAccount($phoneNumber) {

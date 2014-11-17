@@ -4,3 +4,4 @@ composer.lock
 vendor
 log/*.log
 *.dat
+config.php

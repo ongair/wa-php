@@ -1,1 +1,10 @@
-curl -s http://getcomposer.org/installer | php
+WhatsApp Backend for Ongair
+===========================
+
+### Run
+1. You need to have an ongair database
+2. Copy config.php.template and customize it with the right variables
+
+```
+	php poll.rb 254722xxxxxx
+```	
