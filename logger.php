@@ -40,8 +40,8 @@
          * @param String message - message to spit out
          * @return void
          **/        
-        public function d($tag, $message){
-            $this->writeToLog("DEBUG", $tag, $message);
+        public function d($message){
+            $this->writeToLog("DEBUG", "", $message);
         }
 
         /**
@@ -50,8 +50,8 @@
          * @param String message - message to spit out
          * @author 
          **/        
-        public function e($tag, $message){
-            $this->writeToLog("ERROR", $tag, $message);            
+        public function e($message){
+            $this->writeToLog("ERROR", "", $message);            
         }
 
         /**
@@ -70,8 +70,9 @@
          * @param String message - message to spit out
          * @return void
          **/        
-        public function i($tag, $message){
-            $this->writeToLog("INFO", $tag, $message);            
+        // public function i($tag, $message){
+        public function i($message){
+            $this->writeToLog("INFO", "", $message);            
         }
 
         /**
